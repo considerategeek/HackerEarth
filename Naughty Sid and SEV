@@ -1,0 +1,13 @@
+import math
+for i in range(int(raw_input())):
+    x=map(int,raw_input().split())
+    a,H,theta=x[0],x[1],x[2]
+    left_h=H-a*math.tan(math.radians(theta))
+    if left_h>0:
+         h=H-((a/2)*math.tan(math.radians(theta)))
+         print int(math.ceil(h))
+    elif left_h<0:
+        h=((H**2))/(2*a*math.tan(math.radians(theta)))
+        print int(math.ceil(h))
+    else:
+        print int(H/2)
