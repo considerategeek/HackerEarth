@@ -1,0 +1,10 @@
+l1=[]
+n=int(raw_input())
+for i in range(n):
+    l=raw_input()
+    for i in range(len(l)):
+        l1.append(l[i])
+    l1.reverse()
+    print "".join(l1)
+    l1=[]
+
