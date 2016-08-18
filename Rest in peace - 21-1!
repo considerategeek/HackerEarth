@@ -1,0 +1,13 @@
+for i in range(int(raw_input())):
+    num=map(str,raw_input())
+    num2=int("".join(num))
+    a=0
+    for i in range(len(num)-1):
+        if ''.join(num[i:i+2])=="21" or num2%21==0:
+            print 'The streak is broken!'
+            a=0
+            break
+        else:
+            a+=1
+    if a>0:
+        print 'The streak lives still in our heart!'
