@@ -1,0 +1,11 @@
+for i in range(int(raw_input())):
+    suvo,suvojit=0,0
+    string=raw_input()
+    for j in range(len(string)):
+
+            if string[j]=="S" and string[j:j+4]=="SUVO" and string[j+4:j+7]!='JIT':
+                suvo+=1
+            if string[j]=="S" and string[j:j+7]=='SUVOJIT':
+                suvojit+=1
+
+    print 'SUVO = ' +str(suvo)+', ' + 'SUVOJIT = '+str(suvojit) 
