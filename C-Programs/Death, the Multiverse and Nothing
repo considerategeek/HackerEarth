@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include<ctype.h>
+#include<string.h>
+
+int main()
+{
+      int test, num,i ;
+      scanf("%d",&test);
+      for(i=0;i<test;i++)
+      {
+          scanf("%d",&num);
+          num-=1;
+          printf("%d\n",num);
+      }
+
+}
