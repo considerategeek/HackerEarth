@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include<ctype.h>
+#include<string.h>
+
+int main()
+{
+     int a,len,i;
+     long long int ans=1;
+     scanf("%d",&len);
+     for (i=0;i<len;i++)
+     {
+         scanf("%d",&a);
+         ans=(ans*a)%1000000007;
+
+     }
+
+     printf("%lli",ans);
+}
