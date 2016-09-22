@@ -1,0 +1,8 @@
+n=int(raw_input())
+s=list(raw_input())
+if s.count('h')>=2 and s.count('a')>=2 and s.count('e')>=2 and s.count('r')>=2 and s.count('c')>=1 and s.count('k')>= 1 and s.count('e')>= 1 and s.count('t')>=1:
+    print min(s.count('h'),s.count('a'),s.count('e'),s.count('r'))/2
+else:
+    print 0
+
+
